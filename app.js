@@ -12,7 +12,7 @@ const forms = { email: emails, password: passwords, repassword: passwords, nickn
 
 
 req.post({
-   url: 'https://bossnzdev.net/system/data/register.php',
+   url: 'https://linkurl.com/index.php',
    form: forms,
    timeout: 100,
    headers: { 
